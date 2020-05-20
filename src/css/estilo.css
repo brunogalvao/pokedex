@@ -1,0 +1,31 @@
+.grama{
+    background: #8BBE8A url('../img/Pokeball.svg') no-repeat right top;
+}
+
+.fogo{
+    background: #FFA756 url('../img/Pokeball.svg') no-repeat right top;
+}
+
+.pokedex li {
+    list-style: none;
+    border-radius: 10px;
+}
+
+.pokedex div:first-child {
+    color: #4d4d4d;
+    font-size: 1.2rem;
+}
+
+.poke__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.poke__img span {
+    margin-top: -4.8rem;
+}
