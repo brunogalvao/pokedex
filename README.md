@@ -8,7 +8,7 @@ Clone o projeto em um diretorio em sua máquina:
 
 git clone git@github.com:brunogalvao/pokedex.git
 
-[intalar NPM]
+## `intalar NPM`
 
 npm install npm
 
