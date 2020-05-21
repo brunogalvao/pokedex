@@ -1,6 +1,6 @@
 ## Pokedex
 
-Projeto em ReactJS para estudo de funcionalidade.
+Projeto em React JS para estudo de funcionalidade.
 
 ## Instalação
 

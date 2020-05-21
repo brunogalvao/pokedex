@@ -16,6 +16,15 @@
     font-size: 1.2rem;
 }
 
+.poke__titulo {
+    color: #4d4d4d;
+    font-weight: 700;
+}
+
+.poke__texto { 
+    color: #4d4d4d;
+}
+
 .poke__img {
     display: flex;
     flex-direction: row;

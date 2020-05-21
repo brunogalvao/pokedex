@@ -1,4 +1,6 @@
-import React from 'react';
+import React from "react";
+import InputGroup from 'react-bootstrap/InputGroup'
+import FormControl from 'react-bootstrap/FormControl'
 
 const list = [
   {
@@ -45,7 +47,7 @@ const list = [
     monstro: 'Charmander',
     hp: 780,
     ataque: require('../img/Fire.svg'),
-    
+    habilidade: require('../img/empityFire.svg'),
     velocidade: 'rápido',
     classe: 'poke',
     tipo: 'fogo',
@@ -53,20 +55,34 @@ const list = [
   }
 ];
 
+
 const titulo = 'Pokédex';
 
 const nestedLists = [list];
- 
+
+
 const NestedList = () => (
+
   <div className="container">
     {nestedLists.map((nestedList, index) => (
       <ul key={index} className="pokedex">
 
-        <h3 className="font-weight-bold mt-4 mb-4"> {titulo} </h3>
+        <h3 className="font-weight-bold mt-4 mb-4 poke__titulo"> {titulo} </h3>
+
+        <p className="poke__texto">Search for Pokémon by name or using the National Pokédex number.</p>
+
+        <InputGroup className="mb-4 mt-4">
+          <FormControl
+
+            placeholder="Procure seu Pokemon"
+            // aria-describedby="basic-addon1"
+
+          />
+        </InputGroup>
 
         {nestedList.map(item => (
 
-          <li id={item.classe} className={item.tipo +' p-4 mb-5'} key={item.id}>
+          <li id={item.classe} className={item.tipo +' p-4 mb-5'} key={item.id} >
 
             <div className="font-weight-bold">{'#' + item.id}</div>
 
@@ -75,25 +91,27 @@ const NestedList = () => (
 
               <span className={item.monstro}>
 
-                <img src={item.img} />
+                <img src={ item.img } alt={ item.monstro }/>
 
               </span>
             </div>
 
-            {/* <div>{item.hp}</div> */}
-
             <div className="poke__rowbase">
-              <img className="mr-2" src={ item.ataque } />
-              <img src={ item.habilidade } />
+              
+              <img className="mr-2" src={ item.ataque } alt={ item.ataque } />
+
+              <img src={ item.habilidade } alt={item.monstro} />
+
             </div>
 
-            {/* <div>{item.velocidade}</div> */}
           </li>
 
         ))}
       </ul>
     ))}
+
   </div>
 );
+
  
 export default NestedList;
