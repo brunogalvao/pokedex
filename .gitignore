@@ -4,9 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+.gitignore
 
 #arquivo
-/components/Search.js
+/src/components/Search.js
 
 # testing
 /coverage
